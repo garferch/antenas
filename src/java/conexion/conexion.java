@@ -4,7 +4,7 @@ package conexion;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import javax.swing.JOptionPane;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.

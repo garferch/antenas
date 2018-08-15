@@ -14,7 +14,7 @@
                 if (rs.next()){
                     session.setAttribute("user", user);
                     //out.println("ok");
-                    response.sendRedirect("clientes.jsp");
+                    response.sendRedirect("registroClientes.jsp");
                   }
                 else{
                      out.println("Contraseña invalida <a href='index.jsp'>Intertar de nuevo</a>");

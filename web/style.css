@@ -1,6 +1,13 @@
 body {
   background: #2d343d;
 }
+.select{
+  width: 300px;
+  height: 50px;
+  padding-left:10px;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
 
 .login {
   margin: 20px auto;
@@ -9,16 +16,27 @@ body {
   background: white;
   border: 1px solid #c4c4c4;
 }
-
+.titulo-encabezado h1 {
+    color:#fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,2);
+    line-height: 1.3;
+}
 h1.login-title {
+    color: #fff;
+  text-align: center;
+  background: #009999;
+    /*color: #ADADAD;
+     background: #f7f7f7;
+      text-align:center;*/
   margin: -28px -25px 25px;
-  padding: 15px 25px;
+  padding: 5px 25px;
   line-height: 30px;
   font-size: 25px;
   font-weight: 300;
-  color: #ADADAD;
-  text-align:center;
-  background: #f7f7f7;
+  
+ 
+ 
  
 }
 
@@ -64,3 +82,23 @@ h1.login-title {
 }
 
 
+#menu{
+     padding: 0;
+     margin:  15px auto;
+     width: 350px;
+     
+}
+#menu li{
+    display: inline;
+   
+ }
+
+#menu li a {
+ font-family: Arial;
+ font-size: 20px;
+ text-decoration: none;
+ padding: 10px;
+ color: #fff;
+ text-align: center;
+  background: #009999;
+ }

@@ -17,51 +17,32 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%
-      
+    <%
     String user = request.getParameter("usuario");    
     String pwd = request.getParameter("contraseña");
     conexion conex = new conexion();
     Connection cx= conex.conectar();
     
             try{
-      
-  
                 Statement consulta=cx.createStatement();
                 ResultSet registros=consulta.executeQuery("SELECT cliente, SSID, WifiPWd from clientesantenas");
                 int NumeroColumnas=registros.getMetaData().getColumnCount();
                 %>
                  <table border="1">
-                       
                 <%
-                    
-                    
-   
-     
-     
-     
-           //Object[] fila = new Object[NumeroColumnas];
-                        while(registros.next())
+                    while(registros.next())
                         {
                             
-                            %><tr><%
-                               
+                %><tr><%                            
                               for (int i=0;i<NumeroColumnas;i++)
                                 {
-                                    
-                                     if( registros.isFirst()) 
-                                     {
-                                         %><td><%
-                                     out.println(registros.getMetaData().getColumnName(i+1));
-                                     %></td><%
-                                         
-                                     }
-    
-                                    
-                                        
+                                               
+                %><td><%
+                                         out.println(registros.getString(i+1));
+                %></td><%
                                 }   
-                              //modelo.addRow(fila);
-                              %></tr><%
+                                
+                %></tr><%
                         }
              %></table><%
            // jTable1.setModel(modelo);
